@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="721.0" prefWidth="1311.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.Cdetalle">
+   <children>
+      <Button fx:id="btnCancel" layoutX="32.0" layoutY="664.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="32.0" prefWidth="96.0" text="Cancelar" />
+      <Button fx:id="btnAceptar" layoutX="1172.0" layoutY="664.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="32.0" prefWidth="96.0" text="Aceptar" />
+      <Label fx:id="lblInteresado" layoutX="481.0" layoutY="14.0" prefHeight="43.0" prefWidth="514.0" text="INFORMACIÓN DETALLADA">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="67.0" text="Datos del Interesado:" />
+      <TextField fx:id="iNombre" layoutX="33.0" layoutY="107.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iApellido" layoutX="240.0" layoutY="107.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iRazonSocial" layoutX="444.0" layoutY="107.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iDireccion" layoutX="240.0" layoutY="156.0" prefHeight="32.0" prefWidth="386.0" />
+      <TextField fx:id="iFax" layoutX="240.0" layoutY="261.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iDNI" layoutX="33.0" layoutY="156.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iMunicipio" layoutX="33.0" layoutY="208.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iCP" layoutX="240.0" layoutY="208.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iTelefono" layoutX="444.0" layoutY="208.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iMovil" layoutX="33.0" layoutY="261.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iCorreo" layoutX="444.0" layoutY="261.0" prefHeight="32.0" prefWidth="181.0" />
+      <Label layoutX="676.0" layoutY="67.0" text="Datos del Representante:" />
+      <TextField fx:id="rNombre" layoutX="676.0" layoutY="107.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rApellido" layoutX="883.0" layoutY="107.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rRazonSocial" layoutX="1087.0" layoutY="107.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rDireccion" layoutX="882.0" layoutY="156.0" prefHeight="32.0" prefWidth="386.0" />
+      <TextField fx:id="rFax" layoutX="883.0" layoutY="261.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rDNI" layoutX="676.0" layoutY="156.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rMunicipio" layoutX="676.0" layoutY="208.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rCP" layoutX="883.0" layoutY="208.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rTelefono" layoutX="1087.0" layoutY="208.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rMovil" layoutX="676.0" layoutY="261.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rCorreo" layoutX="1087.0" layoutY="261.0" prefHeight="32.0" prefWidth="181.0" />
+      <Label layoutX="32.0" layoutY="318.0" text="Datos de la Actividad:" />
+      <CheckBox fx:id="checkDNI" layoutX="676.0" layoutY="352.0" mnemonicParsing="false" text="Fotocopia DNI / NIF / CIF">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkImpuestosActividad" layoutX="676.0" layoutY="413.17" mnemonicParsing="false" text="Fotocopia impuestos de &#10;actividades">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkFotografias" layoutX="676.0" layoutY="479.5" mnemonicParsing="false" text="Fotografías (Exteriores e &#10;Interiores)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkEscritura" layoutX="676.0" layoutY="549.25" mnemonicParsing="false" text="Fotocopia Escrituras">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkJdePago" layoutX="676.0" layoutY="607.0" mnemonicParsing="false" text="Justificante de Pago">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkMemoriaActiv" layoutX="883.0" layoutY="352.0" mnemonicParsing="false" text="Memoria de la actividad">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkPlanosLocal" layoutX="883.0" layoutY="401.0" mnemonicParsing="false" text="Planos del Local">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkLicObra" layoutX="883.0" layoutY="442.0" mnemonicParsing="false" text="Fotocopia Licencia Obra &#10;de Adaptación">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkModeloTecnico" layoutX="883.0" layoutY="498.0" mnemonicParsing="false" text="Certificado Modelo &#10;Técnico">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkColegio" layoutX="883.0" layoutY="551.0" mnemonicParsing="false" text="Certificado del Colegio &#10;Original Modelo 2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkOtrasAut" layoutX="883.0" layoutY="607.0" mnemonicParsing="false" text="Otras Autorizaciones">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkEscrituraCT" layoutX="1087.0" layoutY="354.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="183.0" text="Escritura de propiedad, &#10;contrato de arrendamiento &#10;o documentos justificativos">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkPlanosCT" layoutX="1087.0" layoutY="447.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="183.0" text="Planos de distribución y &#10;planta de la actividad &#10;anterior ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkLicenciaCT" layoutX="1087.0" layoutY="536.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="181.0" text="Documento que acredite &#10;el traspaso">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkNExpeCT" layoutX="1087.0" layoutY="604.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="Número de expediente">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <MenuButton fx:id="estadoLicencia" cache="true" depthTest="ENABLE" layoutX="340.0" layoutY="352.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="282.0" text="Estado Inicial de la Licencia">
+         <items>
+            <MenuItem fx:id="elTramite" mnemonicParsing="false" onAction="#elSelectedMenuItem1" text="En Tramite" />
+            <MenuItem fx:id="elCaducado" mnemonicParsing="false" onAction="#elSelectedMenuItem2" text="Caducado" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="tipoActividad" layoutX="340.0" layoutY="407.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="282.0" text="Tipo de Actividad">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem1" text="Actividades en suelo calificado como industrial" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem2" text="Actividades en suelo urbano no calificado como industrial" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem3" text="Cajas de Ahorro, Bancos, Entidades Financieras" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem4" text="Compañías de seguros y reaseguros, cajas de pensiones " />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem5" text="Bares, Cafeterías, Restaurantes y similares" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem6" text="Salones recreativos y de juegos" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem7" text="Establecimientos del sector alimenticio" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem8" text="Hoteles, Hostales y Pensiones" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem9" text="Terrazas de verano y similares" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem10" text="Gasolineras, Depósitos de Combustible y similares" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="tipoSuelo" layoutX="33.0" layoutY="465.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="282.0" text="Tipo de suelo">
+         <items>
+            <MenuItem fx:id="tsRustico" mnemonicParsing="false" onAction="#tsSelectedMenuItem1" text="Suelo Rústico" />
+            <MenuItem fx:id="tsUrbano" mnemonicParsing="false" onAction="#tsSelectedMenuItem2" text="Suelo Urbano" />
+         </items>
+      </MenuButton>
+      <TextField fx:id="nregistro" layoutX="33.0" layoutY="354.0" prefHeight="32.0" prefWidth="282.0" />
+      <DatePicker fx:id="fechaSolicitud" layoutX="33.0" layoutY="409.0" prefHeight="32.0" prefWidth="124.0" />
+      <TextField fx:id="catastral" layoutX="33.0" layoutY="528.0" prefHeight="32.0" prefWidth="282.0" />
+      <TextField fx:id="emplazamiento" layoutX="33.0" layoutY="593.0" prefHeight="32.0" prefWidth="282.0" />
+      <DatePicker fx:id="fechaInicio" layoutX="191.0" layoutY="409.0" prefHeight="32.0" prefWidth="124.0" />
+      <TextField fx:id="cuota" layoutX="340.0" layoutY="468.0" prefHeight="32.0" prefWidth="282.0" />
+      <TextArea fx:id="descripcionActividad" layoutX="339.0" layoutY="525.0" prefHeight="101.0" prefWidth="282.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="984.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.CcambioTitular">
+   <children>
+      <Label fx:id="lblInteresado" layoutX="16.0" layoutY="10.0" prefHeight="43.0" prefWidth="351.0" text="Interesado:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="50.0" text="Nombre" />
+      <Label layoutX="227.0" layoutY="50.0" prefHeight="17.0" prefWidth="149.0" text="Apellido" />
+      <Label layoutX="438.0" layoutY="50.0" text="Razón Social" />
+      <Label layoutX="17.0" layoutY="108.0" prefHeight="17.0" prefWidth="149.0" text="Direccion" />
+      <Label layoutX="227.0" layoutY="108.0" text="Municipio" />
+      <Label layoutX="438.0" layoutY="108.0" text="Código Postal" />
+      <Label layoutX="17.0" layoutY="164.0" text="DNI/CIF" />
+      <Label layoutX="227.0" layoutY="164.0" text="Telefono movil" />
+      <Label layoutX="438.0" layoutY="164.0" text="Teléfono Fijo" />
+      <Label fx:id="lblRepresentante" layoutX="16.0" layoutY="286.0" prefHeight="43.0" prefWidth="351.0" text="Representante:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="iNombre" layoutX="17.0" layoutY="81.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="iApellido" layoutX="227.0" layoutY="81.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="iRazonSocial" layoutX="438.0" layoutY="79.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="iDireccion" layoutX="17.0" layoutY="135.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="iMunicipio" layoutX="227.0" layoutY="135.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="iCP" layoutX="438.0" layoutY="135.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="iDNI" layoutX="17.0" layoutY="190.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="iMovil" layoutX="227.0" layoutY="190.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="iTelefono" layoutX="438.0" layoutY="190.0" prefHeight="25.0" prefWidth="184.0" />
+      <CheckBox fx:id="checkEscrituraCT" layoutX="666.0" layoutY="138.0" mnemonicParsing="false" text="Escritura de propiedad, contrato de &#10;arrendamiento o documentos justificativos">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkPlanosCT" layoutX="666.0" layoutY="197.0" mnemonicParsing="false" text="Planos de distribución y planta de la actividad &#10;anterior sobre la que se solicita el cambio &#10;de titularidad">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkLicenciaCT" layoutX="666.0" layoutY="281.0" mnemonicParsing="false" text="Licencia anterior sobre la que se solicita &#10;el traspaso o documento que lo acredite">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkNExpeCT" layoutX="666.0" layoutY="341.0" mnemonicParsing="false" text="Número de expediente sobre el que se &#10;solicita el cambio de titularidad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="662.0" layoutY="96.0" text="Seleccione la documentación aportada:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancel" layoutX="17.0" layoutY="574.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="32.0" prefWidth="96.0" text="Cancelar" />
+      <Button fx:id="btnAceptar" layoutX="861.0" layoutY="574.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="32.0" prefWidth="96.0" text="Aceptar" />
+      <TextField fx:id="iCorreo" layoutX="17.0" layoutY="248.0" prefHeight="25.0" prefWidth="184.0" />
+      <Label layoutX="17.0" layoutY="218.0" text="Correo electrónico" />
+      <Label layoutX="227.0" layoutY="218.0" text="Fax" />
+      <TextField fx:id="iFax" layoutX="227.0" layoutY="248.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="rFax" layoutX="230.0" layoutY="525.0" prefHeight="25.0" prefWidth="184.0" />
+      <Label layoutX="230.0" layoutY="495.0" text="Fax" />
+      <Label layoutX="20.0" layoutY="495.0" text="Correo electrónico" />
+      <TextField fx:id="rCorreo" layoutX="20.0" layoutY="525.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="rTelefono" layoutX="441.0" layoutY="467.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="rMovil" layoutX="230.0" layoutY="467.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="rDNI" layoutX="20.0" layoutY="467.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="rCP" layoutX="441.0" layoutY="412.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="rMunicipio" layoutX="230.0" layoutY="412.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="rDireccion" layoutX="20.0" layoutY="412.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="rRazonSocial" layoutX="441.0" layoutY="356.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="rApellido" layoutX="230.0" layoutY="358.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="rNombre" layoutX="20.0" layoutY="358.0" prefHeight="25.0" prefWidth="184.0" />
+      <Label layoutX="441.0" layoutY="441.0" text="Teléfono Fijo" />
+      <Label layoutX="230.0" layoutY="441.0" text="Telefono movil" />
+      <Label layoutX="20.0" layoutY="441.0" text="DNI/CIF" />
+      <Label layoutX="441.0" layoutY="385.0" text="Código Postal" />
+      <Label layoutX="230.0" layoutY="385.0" text="Municipio" />
+      <Label layoutX="20.0" layoutY="385.0" prefHeight="17.0" prefWidth="149.0" text="Direccion" />
+      <Label layoutX="441.0" layoutY="327.0" text="Razón Social" />
+      <Label layoutX="230.0" layoutY="327.0" prefHeight="17.0" prefWidth="149.0" text="Apellido" />
+      <Label layoutX="20.0" layoutY="327.0" text="Nombre" />
+      <ImageView fitHeight="523.0" fitWidth="16.0" layoutX="640.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="30.0" AnchorPane.topAnchor="60.0">
+         <image>
+            <Image url="@../IMG/descarga2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

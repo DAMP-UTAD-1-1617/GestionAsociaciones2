@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="738.0" prefWidth="1323.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.CnuevaSolicitud">
+   <children>
+      <Label fx:id="lblInteresado" layoutX="30.0" layoutY="15.0" prefHeight="43.0" prefWidth="337.0" text="Interesado:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="71.0" text="Nombre" />
+      <Label layoutX="33.0" layoutY="128.0" prefHeight="17.0" prefWidth="149.0" text="DNI / CIF" />
+      <Label layoutX="240.0" layoutY="128.0" text="Dirección" />
+      <Label layoutX="33.0" layoutY="179.0" prefHeight="17.0" prefWidth="149.0" text="Municipio " />
+      <Label layoutX="240.0" layoutY="179.0" text="Código Postal" />
+      <Label layoutX="444.0" layoutY="179.0" text="Teléfono Fijo" />
+      <Label layoutX="33.0" layoutY="234.0" text="Telefono Movil" />
+      <Label layoutX="240.0" layoutY="234.0" text="Fax" />
+      <Label layoutX="444.0" layoutY="234.0" text="Correo electrónico" />
+      <Label fx:id="lblRepresentante" layoutX="695.0" layoutY="15.0" prefHeight="43.0" prefWidth="431.0" text="Representante:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblActDoc" layoutX="31.0" layoutY="323.0" prefHeight="25.0" prefWidth="291.0" text="Solicitud Actividad:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="620.0" text="Emplazamiento / Lugar" />
+      <Label layoutX="33.0" layoutY="554.0" text="Referencia Catastral" />
+      <Label layoutX="191.0" layoutY="439.0" prefHeight="25.0" prefWidth="130.0" text="Fecha Inicio">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="439.0" prefHeight="25.0" prefWidth="115.0" text="Fecha Solicitud" />
+      <Label layoutX="340.0" layoutY="496.0" prefHeight="25.0" prefWidth="169.0" text="Cuota a ingresar" />
+      <Label layoutX="33.0" layoutY="379.0" text="Número de Registro" />
+      <Label fx:id="lblActDoc" layoutX="695.0" layoutY="323.0" text="Seleccione la documentación aportada:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="553.0" text="Descripción Actividad" />
+      <Label layoutX="241.0" layoutY="71.0" prefHeight="25.0" prefWidth="145.0" text="Apellido" />
+      <Label layoutX="447.0" layoutY="71.0" prefHeight="25.0" prefWidth="145.0" text="Razón Social" />
+      <Label layoutX="695.0" layoutY="71.0" text="Nombre" />
+      <Label layoutX="695.0" layoutY="128.0" prefHeight="17.0" prefWidth="149.0" text="DNI / CIF" />
+      <Label layoutX="902.0" layoutY="128.0" text="Dirección" />
+      <Label layoutX="695.0" layoutY="179.0" prefHeight="17.0" prefWidth="149.0" text="Municipio " />
+      <Label layoutX="902.0" layoutY="179.0" text="Código Postal" />
+      <Label layoutX="1106.0" layoutY="179.0" text="Teléfono Fijo" />
+      <Label layoutX="695.0" layoutY="234.0" text="Telefono Movil" />
+      <Label layoutX="902.0" layoutY="234.0" text="Fax" />
+      <Label layoutX="1106.0" layoutY="234.0" text="Correo electrónico" />
+      <Label layoutX="902.0" layoutY="71.0" prefHeight="25.0" prefWidth="145.0" text="Apellido" />
+      <Label layoutX="1106.0" layoutY="71.0" prefHeight="25.0" prefWidth="145.0" text="Razón Social" />
+      <TextField fx:id="iNombre" layoutX="33.0" layoutY="94.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iApellido" layoutX="240.0" layoutY="94.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iRazonSocial" layoutX="444.0" layoutY="94.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iDNI" layoutX="33.0" layoutY="149.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iDireccion" layoutX="240.0" layoutY="149.0" prefHeight="32.0" prefWidth="386.0" />
+      <TextField fx:id="iMunicipio" layoutX="33.0" layoutY="201.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iCP" layoutX="240.0" layoutY="201.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iTelefono" layoutX="444.0" layoutY="201.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iMovil" layoutX="33.0" layoutY="254.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iFax" layoutX="240.0" layoutY="254.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="iCorreo" layoutX="444.0" layoutY="254.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rNombre" layoutX="695.0" layoutY="94.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rApellido" layoutX="902.0" layoutY="94.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rRazonSocial" layoutX="1106.0" layoutY="94.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rDNI" layoutX="695.0" layoutY="149.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rDireccion" layoutX="902.0" layoutY="149.0" prefHeight="32.0" prefWidth="386.0" />
+      <TextField fx:id="rMunicipio" layoutX="695.0" layoutY="201.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rCP" layoutX="902.0" layoutY="201.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rTelefono" layoutX="1106.0" layoutY="201.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rMovil" layoutX="695.0" layoutY="254.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rFax" layoutX="902.0" layoutY="254.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="rCorreo" layoutX="1106.0" layoutY="254.0" prefHeight="32.0" prefWidth="181.0" />
+      <TextField fx:id="nregistro" layoutX="33.0" layoutY="402.0" prefHeight="32.0" prefWidth="282.0" />
+      <DatePicker fx:id="fechaSolicitud" layoutX="33.0" layoutY="459.0" prefHeight="32.0" prefWidth="124.0" />
+      <DatePicker fx:id="fechaInicio" layoutX="191.0" layoutY="459.0" prefHeight="32.0" prefWidth="124.0" />
+      <MenuButton fx:id="tipoSuelo" layoutX="33.0" layoutY="515.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="282.0" text="Tipo de Suelo">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#tsSelectedMenuItem1" text="Suelo Rústico" />
+            <MenuItem mnemonicParsing="false" onAction="#tsSelectedMenuItem2" text="Suelo Urbano" />
+         </items>
+      </MenuButton>
+      <TextField fx:id="catastral" layoutX="33.0" layoutY="578.0" prefHeight="32.0" prefWidth="282.0" />
+      <TextField fx:id="emplazamiento" layoutX="33.0" layoutY="643.0" prefHeight="32.0" prefWidth="282.0" />
+      <MenuButton fx:id="estadoLicencia" cache="true" depthTest="ENABLE" layoutX="340.0" layoutY="400.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="282.0" text="Estado Inicial de la Licencia">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#elSelectedMenuItem1" text="En Trámite" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="tipoActividad" layoutX="340.0" layoutY="457.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="282.0" text="Tipo de Actividad">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem1" text="Actividades en suelo calificado como industrial" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem2" text="Actividades en suelo urbano no calificado como industrial" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem3" text="Cajas de Ahorro, Bancos, Entidades Financieras" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem4" text="Compañías de seguros y reaseguros, cajas de pensiones " />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem5" text="Bares, Cafeterías, Restaurantes y similares" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem6" text="Salones recreativos y de juegos" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem7" text="Establecimientos del sector alimenticio" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem8" text="Hoteles, Hostales y Pensiones" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem9" text="Terrazas de verano y similares" />
+            <MenuItem mnemonicParsing="false" onAction="#taSelectedMenuItem10" text="Gasolineras, Depósitos de Combustible y similares" />
+         </items>
+      </MenuButton>
+      <TextField fx:id="cuota" layoutX="340.0" layoutY="518.0" prefHeight="32.0" prefWidth="282.0" />
+      <TextArea fx:id="descripcionActividad" layoutX="339.0" layoutY="575.0" prefHeight="101.0" prefWidth="282.0" />
+      <CheckBox fx:id="checkDNI" layoutX="695.0" layoutY="399.0" mnemonicParsing="false" text="Fotocopia DNI / NIF / CIF">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkImpuestosActividad" layoutX="695.0" layoutY="449.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="291.0" text="Fotocopia impuestos de actividades">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkFotografias" layoutX="695.0" layoutY="513.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="291.0" text="Fotografías (Exteriores e Interiores)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkEscritura" layoutX="695.0" layoutY="594.0" mnemonicParsing="false" text="Fotocopia Escrituras">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkJdePago" layoutX="695.0" layoutY="653.0" mnemonicParsing="false" text="Justificante de Pago">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkMemoriaActiv" layoutX="1001.0" layoutY="397.0" mnemonicParsing="false" text="Memoria de la actividad">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkPlanosLocal" layoutX="1001.0" layoutY="442.0" mnemonicParsing="false" text="Planos del Local">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkLicObra" layoutX="1001.0" layoutY="478.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="291.0" text="Fotocopia Licencia Obra de &#10;Adaptación">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkModeloTecnico" layoutX="1001.0" layoutY="541.0" mnemonicParsing="false" text="Certificado Modelo Técnico">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkColegio" layoutX="1001.0" layoutY="581.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="291.0" text="Certificado del Colegio Original&#10;Modelo 2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkOtrasAut" layoutX="1001.0" layoutY="653.0" mnemonicParsing="false" text="Otras Autorizaciones">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btnCancel" layoutX="30.0" layoutY="694.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="32.0" prefWidth="96.0" text="Cancelar" />
+      <Button fx:id="btnAceptar" layoutX="1191.0" layoutY="694.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="32.0" prefWidth="96.0" text="Aceptar" />
+   </children>
+</AnchorPane>
